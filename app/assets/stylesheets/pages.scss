@@ -2,13 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//____NAVBAR____
-
-.navbar {
-	background-color: #2C2C2C;
-}
-
-
+//____GENERAL ELEMS____
 body {
 	background-color: #2C2C2C;
 }
@@ -16,6 +10,34 @@ body {
 h1, h2 {
 	color: white;
 }
+
+.bg-primary {
+	background-color: #9CE7D8 !important;
+}
+
+.btn {
+	cursor: pointer;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.btn-outline-light {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn-outline-dark {
+	color: #000;
+	border-color: #000;
+}
+
+//____NAVBAR____
+
+.navbar {
+	background-color: #2C2C2C;
+}
+
+//____PROJECTS____
 
 #project-board {
 	margin-top: 10%;
@@ -28,6 +50,44 @@ h1, h2 {
 
 }
 
-.bg-primary {
-	background-color: #9CE7D8 !important;
+//____HOME: PROJECT BOARD____
+
+.img-overlay {
+	position: relative;
 }
+
+.img-hover {
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+
+.img-text {
+	color: #fff;
+	font-size: 1.25rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+	-webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+
+}
+
