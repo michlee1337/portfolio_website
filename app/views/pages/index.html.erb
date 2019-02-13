@@ -5,98 +5,123 @@
 	    <meta charset="utf=8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <title>Michelle</title>
-	  </head>
+
+	    <!-- Goole fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+	    <!-- Material icons -->
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+	    <!-- CSS -->
+	    <%= stylesheet_link_tag "pages" %>
+	</head>
+
 	<body>
-		<div class="container-fluid">
-			<div id="banner" class="row">
-				<!-- Name/ Logo -->
-				<div id="name" class="col-md-4 offset-md-4 text-center">
-					<h1>Michelle</h1>
-					<h2>Portfolio</h2>
-				</div>
-			</div>
-		</div>
 
-		<!-- NAV -->
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		  <a class="navbar-brand" href="#">I'm looking for...</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+	    <header class="site-header fixed-top bg-black border-bottom border-dark fixed-top">
+	        <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
+	        <div class="container">
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Highlights <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Web Dev</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Datascience</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Analysis
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Finance</a>
-		          <a class="dropdown-item" href="#">Marketing</a>
-		          <!-- <div class="dropdown-divider"></div> -->
-		          <a class="dropdown-item" href="#">Networks</a>
-		        </div>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">About</a>
-		      </li>
-		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
-		  </div>
-		</nav>
+	            <!-- Navbar -->
+	            <nav class="navbar main-nav navbar-expand-lg navbar-dark" aria-label="Main navigation">
+	                <a href="index.html" class="navbar-brand d-inline-flex text-uppercase">Michelle<i class="material-icons ml-2" aria-hidden="true">donut_large</i></a>
+	                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+	                    <span class="navbar-toggler-icon"></span>
+	                </button>
+	                <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
+	                    <ul class="navbar-nav ml-auto">
+	                        <li class="nav-item">
+	                            <a href="#" class="nav-link">Work</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a href="#" class="nav-link">About</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a href="#" class="nav-link">Contact</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </nav>
+	        </div>
+	    </header>
 
-		<!-- PROJECT BOARD -->
-		<div class="container">
-			<div id="project-board" class="row">
-				
-				<div class="col-md-4" align="center">
-					<div class="card" style="width: 18rem;">
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <h6 class="card-subtitle mb-2">Card subtitle</h6>
-					    <div class="placeholder"></div>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <button type="button" class="btn highlight"><a href="#" class="card-link">link</a></button>
-					  </div>
-					</div>
-				</div>
+        <main id="content">
+        	<!-- Banner -->
 
-				<div class="col-md-4" align="center">
-					<div class="card" style="width: 18rem;">
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <h6 class="card-subtitle mb-2">Card subtitle</h6>
-					    <div class="placeholder"></div>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <button type="button" class="btn highlight"><a href="#" class="card-link">link</a></button>
-					  </div>
-					</div>
-				</div>
+		    <div class="container py-5">
+	            <h1 class="display-2 pb-2">Let's build something</h1>
+	            <hr class="border-3 border-white my-4 ml-0 text-left w-25" role="presentation">
+	            <div class="row">
+	                <div class="col-lg-8">
+	                    <p class="font-serif lead mb-4 text-secondary">Hi! I love effective and simple solutions.</p>
+	                </div>
+	            </div>
+	            <a href="#" class="btn btn-primary">Check out my work</a>
+	        </div>
 
-				<div class="col-md-4" align="center">
-					<div class="card" style="width: 18rem;">
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <h6 class="card-subtitle mb-2">Card subtitle</h6>
-					    <div class="placeholder"></div>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <button type="button" class="btn highlight"><a href="#" class="card-link">link</a></button>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</div>
+	        <!-- Projects -->
+	        <div class="container bg-white text-black py-4">
+	            <ul class="row list-unstyled">
+	                <li class="col-md-6 mb-4">
+	                    <a href="portfolio-1.html">
+	                        <figure class="img-overlay">
+	                            <img src="img/portfolio-1.jpg" alt="Interior designer" class="border-dark img-thumbnail w-100 h-100">
+	                            <div class="img-hover">
+	                                <span class="img-text">View Page</span>
+	                            </div>
+	                        </figure>
+	                        <div class="h5 font-weight-normal text-center">Architecture</div>
+	                    </a>
+	                </li>
+
+	                <li class="col-md-6 mb-4">
+	                    <a href="portfolio-2.html">
+	                        <figure class="img-overlay">
+	                            <img src="img/portfolio-2.jpg" alt="..." class="border-dark img-thumbnail w-100 h-100">
+	                            <div class="img-hover">
+	                                <span class="img-text">View Page</span>
+	                            </div>
+	                        </figure>
+	                        <div class="h5 font-weight-normal text-center">Interior Design</div>
+	                    </a>
+	                </li>
+
+	                <li class="col-md-6 mb-4">
+	                    <a href="portfolio-3.html">
+	                        <figure class="img-overlay">
+	                            <img src="img/portfolio-3.jpg" alt="..." class="border-dark img-thumbnail w-100 h-100">
+	                            <div class="img-hover">
+	                                <span class="img-text">View Page</span>
+	                            </div>
+	                        </figure>
+	                        <div class="h5 font-weight-normal text-center">Photography</div>
+	                    </a>
+	                </li>
+
+	                <li class="col-md-6 mb-4">
+	                    <a href="portfolio-4.html">
+	                        <figure class="img-overlay">
+	                            <img src="img/portfolio-4.jpg" alt="..." class="border-dark img-thumbnail w-100 h-100">
+	                            <div class="img-hover">
+	                                <span class="img-text">View Page</span>
+	                            </div>
+	                        </figure>
+	                        <div class="h5 font-weight-normal text-center">Web Design</div>
+	                    </a>
+	                </li>
+	            </ul>
+	            <div class="text-center my-5">
+	                <a href="pages.html" class="btn btn-outline-white">View all pages</a>
+	            </div>
+	        </div>
+        </main>
+
+	    <!-- Footer -->
+	    <footer class="bg-primary text-dark text-center">
+            <div class="container py-6">
+                <h2 class="font-sans-serif">Need a developer?</h2>
+                <p class="lead mb-4">Would love some work</p>
+                <a href="#" class="btn btn-outline-dark">Contact me</a>
+            </div>
+        </footer>
 	</body>
 </html>

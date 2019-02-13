@@ -2,6 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//____NAVBAR____
+
+.navbar {
+	background-color: #2C2C2C;
+}
+
+
+body {
+	background-color: #2C2C2C;
+}
+
+h1, h2 {
+	color: white;
+}
+
 #project-board {
 	margin-top: 10%;
+}
+
+.btn-primary {
+	background-color: #9CE7D8;
+	border-color: #9CE7D8;
+	color: #000;
+
+}
+
+.bg-primary {
+	background-color: #9CE7D8 !important;
 }
