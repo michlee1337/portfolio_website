@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   # root page in index page
   root 'pages#index'
 
+  get 'index' => 'pages#index'
   get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
+
+  
 
   resources :projects
 end

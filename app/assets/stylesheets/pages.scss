@@ -6,7 +6,7 @@
 $break-large: 700px;
 
 body {
-	background-color: #2C2C2C;
+	background-color: #0e0e0e;
 }
 
 h1, h2 {
@@ -14,7 +14,7 @@ h1, h2 {
 }
 
 .bg-primary {
-	background-color: #9CE7D8 !important;
+	background-color: #7289da !important;
 }
 
 .btn {
@@ -51,16 +51,20 @@ h1, h2 {
 }
 
 header {
-	background-color: #2C2C2C;
+	background-color: #0e0e0e;
 }
 
 .navbar {
-	background-color: #2C2C2C;
+	background-color: #0e0e0e;
 }
 
 //____FOOTER_____
 footer {
 	padding: 5% 0;
+}
+
+.lead {
+	margin: 1.2rem;
 }
 
 //____PROJECTS____
@@ -70,8 +74,8 @@ footer {
 }
 
 .btn-primary {
-	background-color: #9CE7D8;
-	border-color: #9CE7D8;
+	background-color: #7289da;
+	border-color: #7289da;
 	color: #000;
 
 }
@@ -80,7 +84,7 @@ footer {
 
 .img-overlay {
 	position: relative;
-	padding: 10% 10% 0 10%;
+	padding: 10% 0 0 0;
 }
 
 .project-board .h5 {
@@ -132,3 +136,6 @@ footer {
 
 }
 
+.shift-up {
+	margin-top: -3.5rem;
+}
