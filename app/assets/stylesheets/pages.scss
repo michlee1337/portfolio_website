@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //____GENERAL ELEMS____
+$break-large: 700px;
+
 body {
 	background-color: #2C2C2C;
 }
@@ -31,7 +33,26 @@ h1, h2 {
 	border-color: #000;
 }
 
+.wrapper-center {
+    text-align: center;
+    @media screen and (min-width: $break-large) {
+    	text-align: left;
+    }
+}
+
 //____NAVBAR____
+
+.hero h1 {
+	padding-top: 10%;
+	font-size: 3rem;
+	 @media screen and (min-width: $break-large) {
+	    font-size: 5.5rem;
+	}
+}
+
+header {
+	background-color: #2C2C2C;
+}
 
 .navbar {
 	background-color: #2C2C2C;
@@ -54,6 +75,17 @@ h1, h2 {
 
 .img-overlay {
 	position: relative;
+	padding: 10%;
+}
+
+.project-img {
+	width: 100%;
+	height: 200px;
+	background-image: url("https://via.placeholder.com/150");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	border-radius: 1rem;
 }
 
 .img-hover {
