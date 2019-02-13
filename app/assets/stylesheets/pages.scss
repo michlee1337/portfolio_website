@@ -58,6 +58,11 @@ header {
 	background-color: #2C2C2C;
 }
 
+//____FOOTER_____
+footer {
+	padding: 5% 0;
+}
+
 //____PROJECTS____
 
 #project-board {
@@ -75,7 +80,11 @@ header {
 
 .img-overlay {
 	position: relative;
-	padding: 10%;
+	padding: 10% 10% 0 10%;
+}
+
+.project-board .h5 {
+	color: #000;
 }
 
 .project-img {
