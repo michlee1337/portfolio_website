@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'index' => 'pages#index'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
+  get 'web_dev' => 'pages#web_dev'
+  get 'datascience' => 'pages#datascience'
+  get 'analysis' => 'pages#analysis'
   get 'navbar' => 'pages#navbar'
   get 'footer' => 'pages#footer'
 
