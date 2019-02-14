@@ -1,6 +1,53 @@
-<h1> Index </h1>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- for each post -->
-<% @projects.each do |project| %>
-	<h3> <%= project.title %></h3>
-<% end %>
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- CSS -->
+    <%= stylesheet_link_tag "pages" %>
+    <%= stylesheet_link_tag "projects" %>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <%= render "pages/navbar" %>
+
+    <main id="content">
+    	<div class="container">
+	    	<div class="row">
+	    		<div class="side-nav-col col-lg-3 pl-lg-5 order-lg-2 pt-5 pt-lg-6">
+                    <div class="navbar side-nav navbar-expand-lg .navbar-dark sticky-top mb-3" aria-label="Components navigation">
+                        <a class="collapsed btn-block d-lg-none btn btn-outline-dark mb-3 p-3 text-center" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarComp" aria-label="Toggle navigation">
+                            <span class="text-uppercase">Navigation</span>
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarDocs">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Highlights</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Web Dev</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+	    		<div class="side-nav-col col-lg-9 order-lg-1">	
+					<h1> Index </h1>
+
+					<!-- for each post -->
+					<% @projects.each do |project| %>
+						<h3> <%= project.title %></h3>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

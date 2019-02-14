@@ -7,8 +7,9 @@ Rails.application.routes.draw do
   get 'index' => 'pages#index'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
-
-  
+  get 'navbar' => 'pages#navbar'
+  get 'footer' => 'pages#footer'
 
   resources :projects
+  
 end
