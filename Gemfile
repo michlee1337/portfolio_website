@@ -14,7 +14,7 @@ gem 'sprockets-rails', '3.2.1'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 # use pg on deploy
-group :devlopment, :test do
+group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
 end
 
