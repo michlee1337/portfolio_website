@@ -5,13 +5,10 @@
 //____GENERAL ELEMS____
 $break-large: 700px;
 
-body {
+body, .dropdown-menu {
 	background-color: #0e0e0e;
 }
 
-h1, h2 {
-	color: white;
-}
 
 .bg-primary {
 	background-color: #7289da !important;
@@ -40,6 +37,21 @@ h1, h2 {
     }
 }
 
+a:hover {
+	text-decoration: None;
+}
+
+a .h5 {
+	color: #000;
+	font-weight: 600;
+	&:hover {
+		color: #555;
+	}
+}
+
+
+
+
 //____NAVBAR____
 
 .hero h1 {
@@ -54,14 +66,12 @@ header {
 	background-color: #0e0e0e;
 }
 
-.navbar {
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active,.navbar-dark .nav-link{
 	background-color: #0e0e0e;
-	& li {
-		cursor: pointer;
-
-		& a:hover {
-			background-color: #7289da;
-		}
+	color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	&:hover {
+		background-color: #7289da;
 	}
 }
 
@@ -91,16 +101,11 @@ footer {
 
 .img-overlay {
 	position: relative;
-	padding: 10% 0 0 0;
-}
-
-.project-board .h5 {
-	color: #000;
 }
 
 .project-img {
 	width: 100%;
-	height: 200px;
+	height: 254px;
 	background-image: url("https://via.placeholder.com/150");
 	background-size:cover;
 	background-position:center;
@@ -116,6 +121,10 @@ footer {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
+	&:hover {
+		opacity: 1;
+	}
+	border-radius: 1rem;
 }
 
 .img-text {
@@ -140,7 +149,9 @@ footer {
 	transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .shift-up {

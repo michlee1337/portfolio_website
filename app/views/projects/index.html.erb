@@ -19,7 +19,7 @@
 
     <main id="content">
         <!-- Banner -->
-        <div class="hero container py-5">
+        <div class="hero container py-5 text-white">
             <h1>My Work</h1>
             <hr class="border-3 border-white my-4 ml-0 text-left w-25" role="presentation">
             <div class="row">
@@ -28,50 +28,52 @@
                 </div>
             </div>
         </div>
-    	<div class="container">
-	    	<div class="row">
-	    		<div class="side-nav-col col-lg-3 pl-lg-5 order-lg-2 pt-5 pt-lg-6">
-                    <div class="navbar side-nav navbar-expand-lg .navbar-dark sticky-top mb-3" aria-label="Components navigation">
-                        <a class="collapsed btn-block d-lg-none btn btn-outline-dark mb-3 p-3 text-center" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarComp" aria-label="Toggle navigation">
-                            <span class="text-uppercase">Navigation</span>
-                        </a>
-                        <div class="collapse navbar-collapse" id="navbarDocs">
-                            <ul class="navbar-nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Highlights</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Web Dev</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Datascience</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Analysis</a>
-                                </li>
-                            </ul>
+        <div class="container-fluid bg-light text-black py-4">
+        	<div class="container">
+    	    	<div class="row">
+    	    		<div class="side-nav-col col-lg-3 pl-lg-5 order-lg-2 pt-5 pt-lg-6">
+                        <div class="navbar side-nav navbar-expand-lg navbar-light sticky-top mb-3" aria-label="Components navigation">
+                            <a class="collapsed btn-block d-lg-none btn btn-outline-dark mb-3 p-3 text-center" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarComp" aria-label="Toggle navigation">
+                                <span class="text-uppercase">Navigation</span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarDocs">
+                                <ul class="navbar-nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Highlights</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Web Dev</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Datascience</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Analysis</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-	    		<div class="side-nav-col col-lg-9 order-lg-1">	
+    	    		<div class="side-nav-col col-lg-9 order-lg-1 text-black">	
 
-                    <!-- EDIT THIS TO BE 
-                        - CATEGORY
-                            - all projects in this category
-                                - title
-                                - image
-                                - description
-                    -->
-					<h1> Index </h1>
-
-					<!-- for each project -->
-					<% @projects.each do |project| %>
-						<h3> <%= project.title %></h3>
-					<% end %>
-				</div>
-			</div>
+                        <!-- EDIT THIS TO BE 
+                            - CATEGORY
+                                - all projects in this category
+                                    - title
+                                    - image
+                                    - description
+                        -->
+    					<!-- for each project -->
+    					<% @projects.each do |project| %>
+    						<h2 class="pt-5 pt-lg-6"> <%= project.title %></h2>
+    					<% end %>
+    				</div>
+    			</div>
+            </div>
 		</div>
 	</main>
+    <!-- Footer -->
+    <%= render "pages/footer.html" %>
 </body>
 </html>
