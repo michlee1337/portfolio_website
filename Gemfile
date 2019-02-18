@@ -15,12 +15,13 @@ gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 # use pg on deploy
 group :development, :test do
+  gem 'test-unit'
   gem 'sqlite3', '~> 1.3.6'
-  gem 'rspec-rails', '2.0.1'
+  gem "rspec-rails"
+  gem 'rspec', '~> 3.0'
 end
 
 group :test do
-  gem 'rspec', '2.0.1' 
   gem 'webrat', '0.7.1'
 end
 

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'analysis' => 'pages#analysis'
   get 'navbar' => 'pages#navbar'
   get 'footer' => 'pages#footer'
+  get 'banner' => 'pages#banner'
 
   resources :projects
   
