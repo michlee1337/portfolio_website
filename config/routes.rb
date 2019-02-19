@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'navbar' => 'pages#navbar'
   get 'footer' => 'pages#footer'
   get 'banner' => 'pages#banner'
+  get 'comments_form' => 'comments#_form'
 
   resources :projects
   

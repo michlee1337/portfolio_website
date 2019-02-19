@@ -12,6 +12,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     @comments = @project.comments.paginate(:page => params[:page])
+    @comment = Comment.new
   end
 
   # GET /projects/new
