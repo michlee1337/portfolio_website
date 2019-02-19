@@ -2,7 +2,9 @@
   <header class="site-header fixed-top bg-black border-bottom border-dark fixed-top">
     <div class="container">
         <nav class="navbar main-nav navbar-expand-lg navbar-dark" aria-label="Main navigation">
-            <a href="index.html" class="navbar-brand d-inline-flex text-uppercase">Michelle<i class="material-icons ml-2" aria-hidden="true">blur_on</i></a>
+
+            <%= link_to 'Michelle <i class="material-icons ml-2" aria-hidden="true">blur_on</i>'.html_safe, index_path(@index), {:class => "navbar-brand d-inline-flex text-uppercase"} %>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -13,19 +15,19 @@
 				        	My Work
 				        </div>
 				        <div class="dropdown-menu navbar-dark" aria-labelledby="navbarDropdownMenuLink">
-				        	<a class="dropdown-item nav-link" href="projects#index">Index</a>
-                            <a class="dropdown-item nav-link" href="highlights.html">Highlights</a>
-				        	<a class="dropdown-item nav-link" href="web_dev.html">Web Dev</a>
-				        	<a class="dropdown-item nav-link" href="datascience.html">Datascience</a>
-				        	<a class="dropdown-item nav-link" href="analysis.html">Analysis</a>
+                            <%= link_to 'index', index_path, {:class => "dropdown-item nav-link"} %>
+                            <%= link_to 'highlights', highlights_path, {:class => "dropdown-item nav-link"} %>
+                            <%= link_to 'web dev', web_dev_path, {:class => "dropdown-item nav-link"} %>
+                            <%= link_to 'datascience', datascience_path, {:class => "dropdown-item nav-link"} %>
+                            <%= link_to 'analysis', analysis_path, {:class => "dropdown-item nav-link"} %>
                             <div class="dropdown-divider"></div>
 				        </div>
 				     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
+                        <%= link_to 'about', about_path, {:class => "nav-link"} %>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <%= link_to 'contact', contact_path, {:class => "nav-link"} %>
                     </li>
                 </ul>
             </div>
