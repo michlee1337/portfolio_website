@@ -51,7 +51,7 @@
 
         <!-- COMMENTS -->
         <div class="container py-5 text-white">
-	        <h4 class="text-white">Comments</h4>
+	        <h4 class="text-white">Comments: <%= @project.comments.count %></h4>
 	        <hr class="border-3 border-white my-4 ml-0 text-left w-25" role="presentation">
 	        <% unless @project.comments.empty? %>
 				<table class="comments" summary="project comments"> <%= render @comments %>

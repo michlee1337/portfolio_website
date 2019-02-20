@@ -24,13 +24,18 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = Comment.new(comment_params)
+    @project = Project.find(params[:project_id]) 
+    @comment = @project.comments.create(params[:content]).permit(:content))
+    redirect_to project_path(@project)
+    '''
+    Comment.new(comment_params)
     @comment.project_id = $curr_project
-
+    
     if not @comment.save
       format.html { render :new }
       format.json { render json: @comment.errors, status: :unprocessable_entity }
     end
+    '''
   end
 
   # PATCH/PUT /comments/1
