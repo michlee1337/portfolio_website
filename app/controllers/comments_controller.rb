@@ -24,21 +24,19 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = current_project.comments.build(params[:comment])
+    @comment = Comment.new(comment_params)
+    @comment.project_id = $curr_project
 
-    if @comment.save
-      if @comment.save
-        flash[:success] = "Comment created!"
-      else
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
-      end
+    if not @comment.save
+      format.html { render :new }
+      format.json { render json: @comment.errors, status: :unprocessable_entity }
     end
   end
 
   # PATCH/PUT /comments/1
   # PATCH/PUT /comments/1.json
   def update
-    respond_to do |format|
+    respond_to do |f|
       if @comment.update(comment_params)
         format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
         format.json { render :show, status: :ok, location: @comment }

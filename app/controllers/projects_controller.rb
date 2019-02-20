@@ -11,6 +11,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1.json
   def show
     @project = Project.find(params[:id])
+    $curr_project = @project.id
     @comments = @project.comments.paginate(:page => params[:page])
     @comment = Comment.new
   end
