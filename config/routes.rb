@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :comments
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   # root page in index page
@@ -17,7 +16,7 @@ Rails.application.routes.draw do
   get 'banner' => 'pages#banner'
   #get 'comments_form' => 'comments#_form'
 
-  resources :projects
-  resources :comments
-  
+  resources :projects do
+    resources :comments  
+  end
 end
