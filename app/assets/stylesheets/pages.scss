@@ -73,7 +73,12 @@ header {
 	&:hover {
 		background-color: #7289da;
 	}
+	&.disabled {
+	  color: #444;
+	  pointer-events: none;
+	}
 }
+
 
 //____FOOTER_____
 footer {
