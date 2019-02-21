@@ -1,6 +1,11 @@
 <%= form_for([@project, @project.comments.build]) do |f| %>
   
   <div class="field">
+    <%= f.label :name %>
+    <%= f.text_area :name %>
+  </div>
+
+  <div class="field">
     <%= f.label :content %>
     <%= f.text_area :content %>
   </div>

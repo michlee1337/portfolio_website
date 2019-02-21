@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @project = Project.find(params[:project_id])
-    @comment = @project.comments.create(params[:comment].permit(:content))
+    @comment = @project.comments.create(params[:comment].permit(:content, :name))
     redirect_to project_path(@project)
   end
 

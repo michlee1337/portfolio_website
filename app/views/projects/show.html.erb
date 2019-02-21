@@ -23,7 +23,7 @@
 	        <hr class="border-3 border-white my-4 ml-0 text-left w-25" role="presentation">
 	        <div class="row">
 	            <div class="col-lg-8">
-	                <p class="lead mb-4 text-secondary">not sure what to put here</p>
+	                <p class="lead mb-4 text-secondary"><%= @project.subtitle %></p>
 	            </div>
 	        </div>
 	    </div>
@@ -33,15 +33,10 @@
                 <div class="bg-white px-3 px-lg-0 shift-up">
                     <div class="row justify-content-center py-4 py-lg-5">
                         <div class="col-md-10 col-lg-8">
-                            <p><%= @project.content %></p>
 
                             <img src=<%= @project.image %> class="img-fluid mt-3 mb-2" alt="Placeholder">
 
-                            <h2 class="mt-4">Our story</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat <a href="mailto:hello@example.com">hello@example.com.</a></p>
+                            <p><%= @project.content %></p>
 
                         </div>
                     </div>
