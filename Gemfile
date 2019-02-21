@@ -16,7 +16,7 @@ gem 'rails', '~> 5.2.2'
 # use pg on deploy
 group :development, :test do
   gem 'test-unit'
-  gem 'sqlite3', '~> 1.3.6'
+  #gem 'sqlite3', '~> 1.3.6'
   gem "rspec-rails"
   gem 'rspec', '~> 3.0'
 end
@@ -25,9 +25,11 @@ group :test do
   gem 'webrat', '0.7.1'
 end
 
+gem 'pg'
+gem 'rails_12factor'
 group :production do
-  gem 'pg', '0.18.1'
-  gem 'rails_12factor'
+  #gem 'pg'
+  #gem 'rails_12factor'
 end
 
 # paginate
