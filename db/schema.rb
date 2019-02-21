@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_21_050822) do
+ActiveRecord::Schema.define(version: 2019_02_21_055408) do
 
   create_table "comments", force: :cascade do |t|
     t.integer "project_id"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_02_21_050822) do
     t.datetime "image_updated_at"
     t.text "subtitle"
     t.string "category"
+    t.string "link_to_project"
   end
 
 end
