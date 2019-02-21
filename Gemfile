@@ -27,13 +27,13 @@ end
 
 group :production do
   gem 'pg', '0.18.1'
+  gem 'rails_12factor'
 end
 
 # paginate
 gem "will_paginate", "~> 3.0.4" 
 
 
-gem 'rails_12factor', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
