@@ -1,3 +1,5 @@
+host: localhost
+
 development:
   adapter: postgresql
   database: database_development
