@@ -37,8 +37,10 @@ body, .dropdown-menu {
     }
 }
 
-a:hover {
+.btn-primary:hover {
 	text-decoration: None;
+	background-color: black;
+	border-color: #7289da;
 }
 
 a .h5 {
@@ -49,7 +51,23 @@ a .h5 {
 	}
 }
 
+//____FLOAT____
+.floating {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    position: absolute;
+    fill: #6c757d;
+}
 
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    40%  { transform: translate(0, -4px); }
+
+}
 
 
 //____NAVBAR____
@@ -166,4 +184,10 @@ footer {
 
 .shift-up {
 	margin-top: -3.5rem;
+}
+
+//____Floating Landing____
+#tri1 {
+	right:10vw;
+	bottom:-10vw;
 }
