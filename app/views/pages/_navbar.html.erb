@@ -15,7 +15,7 @@
 				        	My Work
 				        </div>
 				        <div class="dropdown-menu navbar-dark" aria-labelledby="navbarDropdownMenuLink">
-                            <%= link_to 'index', index_path, {:class => "dropdown-item nav-link"} %>
+                            <%= link_to 'index',{ :controller => 'projects', :action => 'index'}, {:class => "dropdown-item nav-link"} %>
                             <%= link_to 'highlights','#', {:class => "disabled dropdown-item nav-link"} %>
                             <%= link_to 'web dev', '#', {:class => "disabled dropdown-item nav-link"} %>
                             <%= link_to 'datascience', '#', {:class => "disabled dropdown-item nav-link"} %>

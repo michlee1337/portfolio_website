@@ -193,10 +193,14 @@ footer {
 }
 
 //__CUBES__
-#cube1 {
-@media screen and (max-width: $break-large) {
+
+.cube {
+	@media screen and (max-width: $break-large) {
     	display: none;
     }
+    z-index: -1;
+}
+#cube1 {
 @media screen and (max-width: 990) {
     	top: 300px;
 		left: 75%;
