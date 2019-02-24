@@ -1,6 +1,11 @@
 require_relative 'boot'
 
+
+# compile SVGs
 require 'rails/all'
+config.assets.precompile += %w( '.svg' )  
+config.assets.css_compressor = :sass
+
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

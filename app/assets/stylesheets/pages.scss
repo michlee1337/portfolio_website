@@ -187,7 +187,20 @@ footer {
 }
 
 //____Floating Landing____
-#tri1 {
+.floating {
 	right:10vw;
 	bottom:-10vw;
+}
+
+//__CUBES__
+#cube1 {
+@media screen and (max-width: $break-large) {
+    	display: none;
+    }
+@media screen and (max-width: 990) {
+    	top: 300px;
+		left: 75%;
+    }
+	top: 260px;
+	left: 80%;
 }

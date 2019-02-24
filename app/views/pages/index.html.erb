@@ -12,7 +12,7 @@
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	      rel="stylesheet">
 	    <!-- CSS -->
-	    <%= stylesheet_link_tag "pages" %>
+	    <%= stylesheet_link_tag "pages"%>
 	</head>
 
 	<body>
@@ -21,7 +21,7 @@
 
         <main id="content">
         	<!-- Banner -->
-		    <div class="hero container py-5 text-white">
+		    <div class="hero container py-5 text-white position-relative">
 	            <h1>Let's build something</h1>
 	            <hr class="border-3 border-white my-4 ml-0 text-left w-25" role="presentation">
 	            <div class="row">
@@ -32,9 +32,9 @@
 	            <div class='wrapper-center'>
 	            	<%= link_to 'Check out my work', projects_path, {:class => "btn btn-primary"} %>
 		        </div>
-	        	<svg id ="tri1" class="floating" height="100" width="100">
-				    <polygon points="50,12 20,80 80,80" class="triangle" />
-			  </svg>
+		        <div id="cube1" class="position-absolute floating">
+		        	<%= show_svg('3d.svg')%>
+		        </div>
 	        </div>
 
 	        <!-- Projects -->
