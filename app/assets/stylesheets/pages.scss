@@ -127,13 +127,13 @@ footer {
 }
 
 .project-img {
-	width: 540px;
-	height: 339px;
-	background-image: url("https://via.placeholder.com/150");
+	width: 100%;
+	height: auto;
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
 	border-radius: 1rem;
+	border: 2px solid #777;
 }
 
 .img-hover {
@@ -148,11 +148,6 @@ footer {
 		opacity: 1;
 	}
 	border-radius: 1rem;
-}
-
-.img-overlay img {
-	border-radius: 1rem;
-	border: 2px solid #777;
 }
 
 .img-text {
