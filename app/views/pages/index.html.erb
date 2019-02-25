@@ -42,19 +42,6 @@
 	        	<div class="container">
 		            <ul class="row list-unstyled">
 		                <li class="col-md-6 mb-4">
-		                    <a href="#">
-		                        <figure class="img-overlay">
-		                        	<div class='project-img'>
-			                        </div>
-		                            <div class="img-hover">
-		                                <span class="img-text">Coming Soon!</span>
-		                            </div>
-		                        </figure>
-		                        <div class="h5 text-center text-secondary">Highlights</div>
-		                    </a>
-		                </li>
-
-		                <li class="col-md-6 mb-4">
 		                    <a href="projects">
 		                        <figure class="img-overlay">
 		                        	<% if @projects.empty? %>
@@ -70,7 +57,20 @@
 				                      </div>
 		                            <% end %>
 		                        </figure>
-		                        <div class="h5 text-center">Web Dev</div>
+		                        <div class="h5 text-center">All Projects</div>
+		                    </a>
+		                </li>
+
+		                <li class="col-md-6 mb-4">
+		                    <a href="#">
+		                        <figure class="img-overlay">
+		                            <div class='project-img'>
+			                        </div>
+		                            <div class="img-hover">
+		                                <span class="img-text">Coming Soon!</span>
+		                            </div>
+		                        </figure>
+		                        <div class="h5 text-center text-secondary">Web Dev</div>
 		                    </a>
 		                </li>
 
