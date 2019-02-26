@@ -50,7 +50,7 @@
 			                                <span class="img-text">View Page</span>
 			                            </div>
 			                        <% else %>
-				                      <img src=<%= @projects.second.image %> class="project-img border-dark w-100">
+				                      <img src=<%= @projects.find_by(name: "Responsive and Mobile Frontend, LINK").image %> class="project-img border-dark w-100">
 				                      <div class="img-hover">
 				                        <span class="img-text">View Page</span>
 				                      </div>
@@ -63,7 +63,8 @@
 		                <li class="col-md-6 mb-4">
 		                    <a href="#" class="disabled">
 		                        <figure class="img-overlay">
-		                            <img src="https://via.placeholder.com/3360x2100" class="project-img border-dark w-100">
+		                            <img src=<%= @projects.find_by(name: "Investment Platform for Underfunded Research").image %> class="project-img border-dark w-100">
+				                      <div class="img-hover">
 		                            <div class="img-hover">
 		                                <span class="img-text">Coming Soon!</span>
 		                            </div>
@@ -75,7 +76,7 @@
 		                <li class="col-md-6 mb-4">
 		                    <a href="#" class="disabled">
 		                        <figure class="img-overlay">
-		                            <img src="https://via.placeholder.com/3360x2100" class="project-img border-dark w-100">
+		                             <img src=<%= @projects.find_by(name: "NER for Automated Bookkeeping").image %> class="project-img border-dark w-100">
 		                            <div class="img-hover">
 		                                <span class="img-text">Coming Soon!</span>
 		                            </div>
@@ -87,12 +88,12 @@
 		                <li class="col-md-6 mb-4">
 		                    <a href="#" class="disabled">
 		                        <figure class="img-overlay">
-		                            <img src="https://via.placeholder.com/3360x2100" class="project-img border-dark w-100">
+		                            <img src=<%= @projects.find_by(name: "CP vs PG: Comparison of Past Performance").image %> class="project-img border-dark w-100">
 		                            <div class="img-hover">
 		                                <span class="img-text">Coming Soon!</span>
 		                            </div>
 		                        </figure>
-		                        <div class="h5 text-center">Analysis</div>
+		                        <div class="h5 text-center"> Analysis </div>
 		                    </a>
 		                </li>
 		            </ul>
