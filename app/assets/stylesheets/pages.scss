@@ -4,6 +4,8 @@
 
 //____GENERAL ELEMS____
 $break-large: 700px;
+$highlight-col: #7289da;
+$secondary-col: #6c757d;
 
 body, .dropdown-menu {
 	background-color: #0e0e0e;
@@ -11,7 +13,7 @@ body, .dropdown-menu {
 
 
 .bg-primary {
-	background-color: #7289da !important;
+	background-color: $highlight-col !important;
 }
 
 .btn {
@@ -40,14 +42,24 @@ body, .dropdown-menu {
 .btn-primary:hover {
 	text-decoration: None;
 	background-color: black;
-	border-color: #7289da;
+	border-color: $highlight-col;
 }
 
-a .h5 {
+a {
 	color: #000;
 	font-weight: 600;
 	&:hover {
-		color: #555;
+		color: #000;
+		text-decoration-color: $highlight-col;
+	}
+}
+
+.disabled {
+	color: $secondary-col;
+	&:hover {
+		text-decoration: None;
+		color: $secondary-col;
+		cursor: default;
 	}
 }
 
@@ -89,7 +101,7 @@ header {
 	color: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
 	&:hover {
-		background-color: #7289da;
+		background-color: $highlight-col;
 	}
 	&.disabled {
 	  color: #444;
@@ -114,8 +126,8 @@ footer {
 }
 
 .btn-primary {
-	background-color: #7289da;
-	border-color: #7289da;
+	background-color: $highlight-col;
+	border-color: $highlight-col;
 	color: #000;
 
 }
