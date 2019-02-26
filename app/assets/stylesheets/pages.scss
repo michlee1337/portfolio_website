@@ -109,6 +109,9 @@ header {
 	}
 }
 
+.sticky-top {
+	top: 70px;
+}
 
 //____FOOTER_____
 footer {
@@ -214,4 +217,11 @@ footer {
     }
 	top: 260px;
 	left: 80%;
+}
+
+
+//_____PROJECT INDEX______
+#list-of-projects h1 {
+	margin: 30px 10px;
+	font-weight: 600;
 }

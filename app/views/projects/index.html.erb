@@ -40,44 +40,93 @@
                 </a>
                 <div class="collapse navbar-collapse" id="navbarDocs">
                     <ul class="navbar-nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index">Highlights</a>
+                      <li>
+                            <h5>Navigation</h5>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Web Dev</a>
+                            <a class="nav-link" href="#web_dev">Web Dev</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Datascience</a>
+                            <a class="nav-link" href="#datascience">Datascience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Analysis</a>
+                            <a class="nav-link" href="#analysis">Analysis</a>
                         </li>
                       </ul>
                   </div>
               </div>
           </div>
 
-          <div class="side-nav-col col-lg-9 order-lg-1 text-black"> 
-            <!-- for each project -->
+          <div id="list-of-projects" class="side-nav-col col-lg-9 order-lg-1 text-black"> 
+            <!-- for each web dev project -->
+            <h1 id="web_dev">Web Development</h1>
             <% @projects.each do |project| %>
-              <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6">
-                <div class="col-lg-5 order-lg-2 mb-2 mb-lg-0">
-                  <h2 class="h3 font-weight-normal text-dark"><%= project.name %></h2>
-                  <h2 class="h3 font-weight-normal text-secondary"><%= project.category %></h2>
-                  <p class="font-weight-light text-dark"><%= project.subtitle %></p>
+              <% if project.category == "web_dev" %>
+                <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6">
+                  <div class="col-lg-5 order-lg-2 mb-2 mb-lg-0">
+                    <h2 class="h3 font-weight-normal text-dark"><%= project.name %></h2>
+                    <p class="font-weight-light text-dark"><%= project.subtitle %></p>
+                  </div>
+                  <div class="col-lg-6 order-lg-1">
+                    <a href="projects/<%= project.id %>">
+                      <figure class="img-overlay">
+                        <img src=<%= project.image%> class="project-img border-dark w-100 h-100">
+                        <div class="img-hover">
+                          <span class="img-text">View Page</span>
+                        </div>
+                      </figure>
+                    </a>
+                  </div>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                  <a href="projects/<%= project.id %>">
-                    <figure class="img-overlay">
-                      <img src=<%= project.image%> class="project-img border-dark w-100 h-100">
-                      <div class="img-hover">
-                        <span class="img-text">View Page</span>
-                      </div>
-                    </figure>
-                  </a>
-                </div>
-              </div>
+              <% end %>
             <% end %>
+
+            <!-- for each datascience project -->
+            <h1 id="datascience">Datascience</h1>
+            <% @projects.each do |project| %>
+              <% if project.category == "datascience" %>
+                <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6">
+                  <div class="col-lg-5 order-lg-2 mb-2 mb-lg-0">
+                    <h2 class="h3 font-weight-normal text-dark"><%= project.name %></h2>
+                    <p class="font-weight-light text-dark"><%= project.subtitle %></p>
+                  </div>
+                  <div class="col-lg-6 order-lg-1">
+                    <a href="projects/<%= project.id %>">
+                      <figure class="img-overlay">
+                        <img src=<%= project.image%> class="project-img border-dark w-100 h-100">
+                        <div class="img-hover">
+                          <span class="img-text">View Page</span>
+                        </div>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+              <% end %>
+            <% end %>
+
+            <!-- for each analysis project -->
+            <h1 id="analysis">Analysis</h1>
+            <% @projects.each do |project| %>
+              <% if project.category == "analysis" %>
+                <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6">
+                  <div class="col-lg-5 order-lg-2 mb-2 mb-lg-0">
+                    <h2 class="h3 font-weight-normal text-dark"><%= project.name %></h2>
+                    <p class="font-weight-light text-dark"><%= project.subtitle %></p>
+                  </div>
+                  <div class="col-lg-6 order-lg-1">
+                    <a href="projects/<%= project.id %>">
+                      <figure class="img-overlay">
+                        <img src=<%= project.image%> class="project-img border-dark w-100 h-100">
+                        <div class="img-hover">
+                          <span class="img-text">View Page</span>
+                        </div>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+              <% end %>
+            <% end %>
+
           </div>
         </div>
       </div>
