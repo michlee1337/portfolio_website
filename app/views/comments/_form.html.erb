@@ -1,16 +1,31 @@
 <%= form_for([@project, @project.comments.build]) do |f| %>
-  
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_area :name %>
-  </div>
 
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-  </div>
+  <div class="comment form">
+    
+    <div class="field row">
+      <div class="col-md-1">
+        <%= f.label :name %>
+      </div>
+      <div class="col-md-1">
+        <%= f.text_area :name %>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= f.submit %>
+    <div class="field row">
+      <div class="col-md-1">
+        <%= f.label :content %>
+      </div>
+      <div class="col-md-1">
+        <%= f.text_area :content %>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="actions col-md-3 text-center">
+        <%= f.submit 'Create Comment', :class => "btn btn-primary" %>
+      </div>
+    </div>
+
   </div>
 <% end %>
